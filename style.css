@@ -1,0 +1,354 @@
+
+@import url("http://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #081b29;
+    color: #ededed;
+    overflow-x: hidden; 
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 10%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 15px; 
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00abf0;
+}
+
+section {
+    padding: 100px 10%;
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.home-content p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.home-content a {
+    --glow-color: rgb(217, 176, 255);
+    --glow-spread-color: rgba(217, 176, 255, 0.781);
+    --enhanced-glow-color: rgb(231, 206, 255);
+    --btn-color: rgb(100, 61, 136);
+    border: 0.25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em 0.25em var(--glow-color),
+        0 0 4em 0.5em var(--glow-spread-color),
+        inset 0 0 0.75em 0.25em var(--glow-color);
+    text-shadow: 0 0 1em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block; 
+    margin-top: 20px; 
+}
+
+.home-content a::after {
+    pointer-events: none;
+    content: '';
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: 0.7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+}
+
+.home-content a:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em 0.25em var(--glow-color),
+        0 0 4em 2em var(--glow-spread-color),
+        inset 0 0 0.75em 0.25em var(--glow-color);
+}
+
+.home-content a:active {
+    box-shadow: 0 0 0.6em 0.25em var(--glow-color),
+        0 0 2.5em 2em var(--glow-spread-color),
+        inset 0 0 0.5em 0.25em var(--glow-color);
+    margin: 0;
+    height: 50px;
+    border: 3px solid var(--glow-color);
+}
+
+.about, .services, .portfolio, .contact {
+    padding: 100px 0;
+}
+
+.about-content, .services-content, .portfolio-content, .contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content h2, .services-content h2, .portfolio-content h2, .contact-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-content p, .services-content p, .portfolio-content p, .contact-content p {
+    font-size: 18px;
+    line-height: 1.6;
+} 
+ 
+
+
+
+
+@media screen {
+    @import url("http://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    body {
+        background: #081b29;
+        color: #ededed;
+        overflow-x: hidden; 
+    }
+    
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 0 10%;
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
+    
+    .logo {
+        font-size: 25px;
+        color: #ededed;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    
+    .navbar a {
+        font-size: 18px;
+        color: #ededed;
+        text-decoration: none;
+        font-weight: 600;
+        margin: 0 15px; 
+    }
+    
+    .navbar a:hover,
+    .navbar a.active {
+        color: #00abf0;
+    }
+    
+    section {
+        padding: 100px 10%;
+    }
+    
+    .home {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        padding: 0 10%;
+    }
+    
+    .home-content {
+        max-width: 600px;
+    }
+    
+    .home-content h1 {
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+    
+    .home-content h3 {
+        font-size: 32px;
+        font-weight: 700;
+        color: #00abf0;
+    }
+    
+    .home-content p {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    
+    .home-content a {
+        --glow-color: rgb(217, 176, 255);
+        --glow-spread-color: rgba(217, 176, 255, 0.781);
+        --enhanced-glow-color: rgb(231, 206, 255);
+        --btn-color: rgb(100, 61, 136);
+        border: 0.25em solid var(--glow-color);
+        padding: 1em 3em;
+        color: var(--glow-color);
+        font-size: 15px;
+        font-weight: bold;
+        background-color: var(--btn-color);
+        border-radius: 1em;
+        outline: none;
+        box-shadow: 0 0 1em 0.25em var(--glow-color),
+            0 0 4em 0.5em var(--glow-spread-color),
+            inset 0 0 0.75em 0.25em var(--glow-color);
+        text-shadow: 0 0 1em var(--glow-color);
+        position: relative;
+        transition: all 0.3s;
+        text-decoration: none;
+        display: inline-block; 
+        margin-top: 20px; 
+    }
+    
+    .home-content a::after {
+        pointer-events: none;
+        content: '';
+        position: absolute;
+        top: 120%;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: var(--glow-spread-color);
+        filter: blur(2em);
+        opacity: 0.7;
+        transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+    }
+    
+    .home-content a:hover {
+        color: var(--btn-color);
+        background-color: var(--glow-color);
+        box-shadow: 0 0 1em 0.25em var(--glow-color),
+            0 0 4em 2em var(--glow-spread-color),
+            inset 0 0 0.75em 0.25em var(--glow-color);
+    }
+    
+    .home-content a:active {
+        box-shadow: 0 0 0.6em 0.25em var(--glow-color),
+            0 0 2.5em 2em var(--glow-spread-color),
+            inset 0 0 0.5em 0.25em var(--glow-color);
+        margin: 0;
+        height: 50px;
+        border: 3px solid var(--glow-color);
+    }
+    
+    .about, .services, .portfolio, .contact {
+        padding: 100px 0;
+    }
+    
+    .about-content, .services-content, .portfolio-content, .contact-content {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .about-content h2, .services-content h2, .portfolio-content h2, .contact-content h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    
+    .about-content p, .services-content p, .portfolio-content p, .contact-content p {
+        font-size: 18px;
+        line-height: 1.6;
+    } 
+    
+    /* Media query for responsiveness */
+    @media (max-width: 600px) {
+        .header {
+            height: 50px;
+            padding: 0 5%;
+            background-color: #000; /* Pitch black color */
+        }
+        .logo {
+            font-size: 20px;
+        }
+        .navbar a {
+            font-size: 16px;
+            margin: 0 10px; 
+        }
+        .home-content {
+            max-width: 100%;
+        }
+        .home-content h1 {
+            font-size: 40px;
+        }
+        .home-content h3 {
+            font-size: 80px;
+        }
+        .home-content p {
+            font-size: 12px;
+        }
+        .home-content a {
+            font-size: 12px;
+            padding: 0.75em 2em;
+        }
+        section {
+            padding: 80px 5%;
+        }
+        .home-content h3 {
+            font-size: 40px;
+        }
+    }
+}

@@ -1,0 +1,118 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hiring website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">      
+        <a href="#" class="logo">tahsin.</a>
+        <nav class="navbar">
+            <a href="#" class="active">home</a>
+            <a href="#">about</a>
+            <a href="#">portfolio</a>
+            <a href="#">service</a>
+            <a href="#">contact</a>
+    </header>
+  
+    <section class="home">
+        <div class ="home-content">
+            <h1>Hi, i'm Tahsin </h1>
+            <h3>Fontend Developer</h3>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto aliquid, voluptatem voluptatum, maxime repellat eos nisi aut assumenda dolor vero ut porro, vitae voluptatibus quaerat sunt! Unde, reprehenderit nihil. At.</P>
+            <a href="#">Hire Me </a>
+            <a href="#">Let's Talk</a>
+        </div>
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Personal Website</title>
+     <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+     <div class="header">
+         <a href="#home" class="logo">Tahsin.</a>
+         <div class="navbar">
+             <a href="#home" class="active">Home</a>
+             <a href="#about">About</a>
+             <a href="#services">Services</a>
+             <a href="#portfolio">Portfolio</a>
+             <a href="#contact">Contact</a>
+         </div>
+     </div>
+ 
+     <section class="home" id="home">
+         <div class="home-content">
+             <h1>HI, I'm Farhan Sahriar Tahsin </h1>
+             <h3>A Fontend Developer</h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+             <a href="https://example.com/hire-me" target="_blank">Hire Me</a>
+             <a href="https://example.com/lets-talk" target="_blank">Let's Talk</a>
+         </div>
+     </section>
+ 
+     <section class="about" id="about">
+         <div class="about-content">
+             <h2>About Me</h2>
+             <p>Hi! I'm Farhan Sahriar Tahsin, an enthusiastic 8th grader from Dhaka, living in the vibrant area of Nārāyanganj Bandar. I've been exploring web development for the past month and am already captivated by the endless possibilities it offers. I love bringing creative ideas to life through code and am eager to continue learning and growing in this exciting field. Join me on my journey as I develop cool and innovative web projects!</p>
+         </div>
+     </section>
+ 
+     <section class="services" id="services">
+         <div class="services-content">
+             <h2>Services</h2>
+             <ul>
+                 <li><strong>Website Design</strong> - Crafting visually appealing and user-friendly designs to ensure an engaging user experience.</li>
+                 <li><strong>Responsive Web Development</strong> - Building websites that look great on all devices, from desktops to smartphones.</li>>
+                 <li><strong>Basic SEO Implementation</strong> - Applying basic SEO techniques to help websites rank better on search engines.</li>
+                 <li><strong>Website Maintenance</strong> - Providing ongoing support to update and maintain websites.</li>
+             </ul>
+         </div>
+     </section>
+ 
+     <section class="portfolio" id="portfolio">
+         <div class="portfolio-content">
+             <h2>Portfolio</h2>
+             <p>Here are some of the projects I've been working on:</p>
+             <ul>
+                 <li><strong>Personal Website</strong> - A website showcasing my skills and projects.</li>
+                 <li><strong>Interactive Quiz</strong> - A fun and interactive quiz application using JavaScript.</li>
+                 <li><strong>Responsive Blog</strong> - A blog layout that adapts seamlessly to different screen sizes.</li>
+             </ul>
+             <p>More exciting projects are on the way, so stay tuned!</p>
+         </div>
+     </section>
+ 
+     <section class="contact" id="contact">
+         <div class="contact-content">
+             <h2>Contact Me</h2>
+             <p>If you'd like to get in touch with me for any web development projects or collaborations, feel free to reach out!</p>
+             <p>Email: <a href="mailto:farhan@example.com">farhan@example.com</a></p>
+             <p>Phone: +01770-601313</p>
+             <p>Or connect with me on social media:</p>
+             <p><a href="https://www.linkedin.com/in/farhansahriar" target="_blank">LinkedIn</a> | <a href="https://twitter.com/farhansahriar" target="_blank">Twitter</a> | <a href="https://github.com/farhansahriar" target="_blank">GitHub</a></p>
+         </div>
+     </section>
+ 
+     <script>
+         document.querySelectorAll('.navbar a').forEach(anchor => {
+             anchor.addEventListener('click', function(e) {
+                 e.preventDefault();
+                 document.querySelector(this.getAttribute('href')).scrollIntoView({
+                     behavior: 'smooth'
+                 });
+             });
+         });
+     </script>
+ </body>
+ </html>
+ 
